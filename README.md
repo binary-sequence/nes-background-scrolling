@@ -5,11 +5,11 @@ Nice! You already know how draw static backgrounds for NES. (See https://github.
 
 Now it is time for the next level: background scrolling.
 
-1. [auto-scroll.nes](#auto-scrollasm)
+1. [auto-scroll-horizontal.nes](#auto-scrollasm)
 2. [Special thanks to](#special-thanks-to)
 
-# auto-scroll.nes
-![auto-scroll.nes on FCEUX](screenshots/auto-scroll-horizontal-fceux.gif)
+# auto-scroll-horizontal.nes
+![auto-scroll-horizontal.nes on FCEUX](screenshots/auto-scroll-horizontal-fceux.gif)
 
 Color palettes, pattern tables and even two nametables were created with the [NEXXT](https://frankengraphics.itch.io/nexxt) tile editor.
 
