@@ -1,7 +1,7 @@
 # nes-background-scrolling
 Examples of background scrolling in [NES 6502 assembler](https://www.masswerk.at/6502/6502_instruction_set.html) for [ca65/ld65](https://cc65.github.io/doc/)
 
-Nice! You already know how draw static backgrounds for NES. (See https://github.com/binary-sequence/nes-hello-world)
+Nice! You already know how to draw static backgrounds for NES. (See https://github.com/binary-sequence/nes-hello-world)
 
 Now it is time for the next level: background scrolling.
 
