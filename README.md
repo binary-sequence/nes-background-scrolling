@@ -5,7 +5,7 @@ Nice! You already know how draw static backgrounds for NES. (See https://github.
 
 Now it is time for the next level: background scrolling.
 
-1. [auto-scroll-horizontal.nes](#auto-scrollasm)
+1. [auto-scroll-horizontal.nes](#auto-scroll-horizontalnes)
 2. [Special thanks to](#special-thanks-to)
 
 # auto-scroll-horizontal.nes
