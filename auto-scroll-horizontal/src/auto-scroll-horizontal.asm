@@ -66,12 +66,11 @@ nametable_1: .incbin "../res/nametable_1.nam"
   STA PPUSCROLL ; Y position
   LDA ppu_ctrl ; load value from zero page RAM
   STA PPUCTRL ; select nametable
-  INC x_scroll ; increment value in zero page RAM for next vblank
-  BNE keep_selected_nametable ; until overflow
-  LDA ppu_ctrl
+  INC x_scroll ; increment value in zero page RAM for next frame/vblank/NMI
+  BNE keep_selected_nametable ; skip next two lines until overflow
   EOR #%00000001 ; flip bit 0 to select the next nametable
-  STA ppu_ctrl
-  keep_selected_nametable:
+  STA ppu_ctrl ; save selected nametabe for next frame/vblank/NMI
+  keep_selected_nametable: ; branch here until x_scroll overflows
 
   ; Restore the registers before returning
   PLA ; pull value from the stack (which was Y's value)
@@ -79,7 +78,7 @@ nametable_1: .incbin "../res/nametable_1.nam"
   PLA ; pull value from the stack (which was X's value)
   TAX ; copy A to X
   PLA ; pull value  from the stack (which was A's value)
-  ; SR (status register) is automatically pulled from the stack
+  ; SR (status register) will be automatically pulled from the stack after RTI
   RTI ; return and resume to the main thread
 .endproc
 
