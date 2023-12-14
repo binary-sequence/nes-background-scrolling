@@ -15,7 +15,7 @@ Color palettes, pattern tables and even two nametables were created with the [NE
 
 ![1 palette, 1 pattern table and 2 nametables in NEXXT](screenshots/auto-scroll-horizontal-nexxt.gif)
 
-- See the source code [auto-scroll.asm](auto-scroll-horizontal/src/auto-scroll-horizontal.asm)
+- See the source code [auto-scroll-horizontal.asm](auto-scroll-horizontal/src/auto-scroll-horizontal.asm)
 
 
 # Special thanks to
